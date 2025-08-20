@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fundación Cultural Colombia Negra"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.067205, 4.6125226]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lachoco Latera Chocolatería"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0667158, 4.6120395]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Capilla Nuestra Señora del Perpetuo Socorro - La Macarena"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0659298, 4.6128448]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NC-arte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0671752, 4.6126503]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matorral Librería"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.06704, 4.612988]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universidad Distrital Francisco José de Caldas - Facultad de Ciencias y Educación"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0656047, 4.6136089]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ocio Gallery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0672235, 4.6122846]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beograd-Belgrado Restaurante Serbio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0669583, 4.6119884]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Restaurante Temático La Juguetería - Macarena"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0664918, 4.6137773]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Plaza de mercado La Perseverancia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0662788, 4.616465]
+      }
+    }
+  ]
+}

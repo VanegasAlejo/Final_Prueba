@@ -1,0 +1,132 @@
+/* styles.css */
+html, body, #cesiumContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background: #f5f3e8;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Contenedor del logo y título */
+.logo-title {
+  position: absolute;
+  top: 18px;
+  left: 38px;
+  z-index: 10;
+  text-align: center;
+}
+
+.logo-title img {
+  height: 100px;
+  margin-bottom: 8px;
+}
+
+.logo-title h1 {
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+  font-size: 2em;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+.logo-title h2 {
+  margin: 4px 0 0 0;
+  font-family: 'Times New Roman', serif;
+  font-size: 1.3em;
+  color: #555;
+  font-weight: normal;
+}
+
+/* Panel de controles del recorrido */
+#controls {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 12px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  padding: 10px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#controls button {
+  margin: 5px;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #1e88e5;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#controls button:hover:not(:disabled) {
+  background: #0d47a1;
+}
+
+/* Encabezado personalizado */
+.custom-header {
+  width: 100%;
+  background: #FFEFD4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 160px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 40px;
+  position: relative;
+}
+
+.header-logo {
+  height: 140px;
+  margin-right: 40px;
+  object-fit: contain;
+}
+
+.header-titles {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+.header-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.header-subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.2rem;
+  color: #888;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+}

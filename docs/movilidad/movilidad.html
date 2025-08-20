@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de paraderos del SITP - La Macarena</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movilidad.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        .mapa-instruccion {
+            margin: 10px auto;
+            font-size: 1.1em;
+            color: #333;
+            background: #f8f8f8;
+            border: 2px solid #2e37e2;
+            border-radius: 8px;
+            padding: 12px 20px;
+            display: block;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            width: fit-content;
+        }
+        .map-legend {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background: rgba(255,255,255,0.95);
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 10px 16px;
+            font-size: 0.98em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            z-index: 1000;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .legend-color {
+            width: 22px;
+            height: 10px;
+            margin-right: 8px;
+            border: 2px solid #000;
+            display: inline-block;
+        }
+        .legend-park {
+            background: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+        .legend-macarena {
+            background: transparent;
+            border: 2px solid #000;
+        }
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #1976d2; /* Azul SITP */
+            border: 2px solid #0d47a1;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .subtitulo-barrio {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 6px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../docs/index.html">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+        <h1>
+            Mapa de paraderos del SITP
+            <div class="subtitulo-barrio">Barrio La Macarena</div>
+        </h1>
+    </header>
+    <div class="mapa-instruccion">
+        Haz clic sobre el paradero en el mapa para ver su información
+    </div>
+    <div id="map"></div>
+    <div class="map-legend">
+        <div class="legend-item">
+            <span class="legend-color legend-macarena"></span>
+            Barrio La Macarena
+        </div>
+        <div class="legend-item">
+            <span class="legend-dot"></span>
+            Paradero SITP
+        </div>
+        <div class="legend-item">
+            <span style="display:inline-block;width:22px;height:6px;background:#1976d2;opacity:0.4;border-radius:3px;margin-right:8px;border:2px solid #0d47a1;"></span>
+            Ruta SITP
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="movilidad.js"></script>
+</body>
+</html>

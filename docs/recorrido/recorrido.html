@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Recorrido Virtual - Barrio La Macarena</title>
+
+  <!-- Cesium JS -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.132/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.132/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
+
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Encabezado personalizado -->
+  <header class="custom-header">
+    <div class="header-content">
+      <a href="../index.html">
+        <img src="logo.png" alt="Logo Barrio La Macarena" class="header-logo">
+      </a>
+      <div class="header-titles">
+        <h1 class="header-title">Recorrido Virtual</h1>
+        <h2 class="header-subtitle">Barrio La Macarena</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor de Cesium -->
+  <div id="cesiumContainer"></div>
+
+  <!-- Controles del recorrido -->
+  <div id="controls">
+    <button id="startTour">▶️ Iniciar Recorrido</button>
+    <button id="pauseTour" disabled>⏸️ Pausar</button>
+    <button id="resetTour" disabled>🔄 Reiniciar</button>
+  </div>
+
+  <!-- Script externo (al final para asegurar carga del DOM) -->
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

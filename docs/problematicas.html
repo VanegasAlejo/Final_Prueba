@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problematicas de La Macarena</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header-left">
+    <!-- Línea con el logo y nombre -->
+    <div class="logo-nombre" style="margin-bottom:24px;">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo de la empresa" class="logo">
+      </a>
+      <span class="empresa-nombre">Ámbar</span>
+      <!-- Menú -->
+      <nav>
+        <ul class="menu-desplegable">
+          <li><a href="index.html#equipamientos">Equipamientos</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li>
+            <button onclick="window.location.href='index.html'" style="background:none;border:none;color:#333;font-size:inherit;cursor:pointer;padding:12px 28px;line-height:1.2;">
+              Volver
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!-- Ajuste del título -->
+      <div style="text-align:center; margin:12px 0 20px 0;">
+        <span style="font-weight:bold; font-size:2.4em; color:#000000; line-height:3.2;">
+          Problemáticas
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú desplegable -->
+  <nav style="text-align:center; margin-top:10px;">
+    <button class="dropdown-btn" onclick="mostrarSeccion('ambiental')">Problemática ambiental</button>
+    <button class="dropdown-btn" onclick="mostrarSeccion('otras')">Otras problemáticas del barrio</button>
+  </nav>
+
+  <!-- Sección Problemática Ambiental -->
+  <section id="seccion-ambiental" style="display:block;">
+    <!-- Análisis de calidad del aire para la localidad de Santa Fe y La Macarena -->
+    <div style="max-width:800px;margin:40px auto 0 auto;padding:24px 28px;background:#fffbe7;border:2px solid #ff9800;border-radius:12px;box-shadow:0 2px 12px rgba(255,152,0,0.08);">
+      <h2 style="color:#ff9800;text-align:center;margin-bottom:12px;">¿Cómo es la calidad del aire en Santa Fe y La Macarena?</h2>
+      <p style="font-size:1.15em;line-height:1.7;color:#444;">
+        La calidad del aire en la localidad de Santa Fe, que incluye al barrio La Macarena, se monitorea principalmente desde la estación <b>MinAmbiente</b>, la más cercana a la zona. 
+        <br><br>
+        <b>¿Qué muestran los datos?</b>
+        <ul style="margin-top:8px;">
+          <li>
+            <b>PM10</b> (partículas en suspensión): El promedio es de <b>34.2 µg/m³</b>, con picos de hasta <b>58.7 µg/m³</b>. Aunque el valor medio está dentro de los límites recomendados, en algunos días se superan los niveles saludables, lo que puede afectar a personas sensibles (niños, adultos mayores y personas con enfermedades respiratorias).
+          </li>
+          <li>
+            <b>NO<sub>2</sub></b> (dióxido de nitrógeno): El promedio es de <b>21.7 µg/m³</b>, valores moderados que reflejan la influencia del tráfico y otras fuentes urbanas, pero generalmente dentro de los límites aceptables.
+          </li>
+          <li>
+            <b>O<sub>3</sub></b> (ozono): El promedio es de <b>13.5 µg/m³</b>, un valor bajo y positivo para la salud.
+          </li>
+        </ul>
+        <b>¿Qué significa esto para La Macarena?</b><br>
+        En general, el aire es aceptable la mayor parte del tiempo, pero hay episodios de contaminación por partículas (PM10), especialmente en días secos o de alta actividad vehicular. Es importante mantener la vigilancia y tomar precauciones en días de mala calidad del aire.
+      </p>
+    </div>
+
+    <section style="max-width:800px;margin:40px auto;padding:40px 20px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+      <h2 style="text-align:center;">Mapa de estaciones de calidad del aire</h2>
+      <div id="map" style="height:400px; width:100%; border-radius:8px; margin-top:20px;"></div>
+
+      <!-- Tabla de contaminantes de la Estación MinAmbiente -->
+      <h3 style="text-align:center; margin-top:36px; color:#1976d2;">Estadísticas de contaminantes - Estación MinAmbiente</h3>
+      <div style="overflow-x:auto;">
+        <table style="margin:24px auto 0 auto; border-collapse:collapse; min-width:340px; max-width:600px; width:100%; background:#fff;">
+          <thead style="background:#e3f2fd;">
+            <tr>
+              <th style="border:1px solid #1976d2; padding:8px;">Contaminante</th>
+              <th style="border:1px solid #1976d2; padding:8px;">Media</th>
+              <th style="border:1px solid #1976d2; padding:8px;">Mínimo</th>
+              <th style="border:1px solid #1976d2; padding:8px;">Máximo</th>
+              <th style="border:1px solid #1976d2; padding:8px;">Desviación estándar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Ejemplo de datos, reemplaza por los reales -->
+            <tr>
+              <td style="border:1px solid #1976d2; padding:8px;">PM10</td>
+              <td style="border:1px solid #1976d2; padding:8px;">34.2</td>
+              <td style="border:1px solid #1976d2; padding:8px;">12.0</td>
+              <td style="border:1px solid #1976d2; padding:8px;">58.7</td>
+              <td style="border:1px solid #1976d2; padding:8px;">8.5</td>
+            </tr>
+            <tr>
+              <td style="border:1px solid #1976d2; padding:8px;">NO2</td>
+              <td style="border:1px solid #1976d2; padding:8px;">21.7</td>
+              <td style="border:1px solid #1976d2; padding:8px;">7.3</td>
+              <td style="border:1px solid #1976d2; padding:8px;">39.1</td>
+              <td style="border:1px solid #1976d2; padding:8px;">5.2</td>
+            </tr>
+            <tr>
+              <td style="border:1px solid #1976d2; padding:8px;">O3</td>
+              <td style="border:1px solid #1976d2; padding:8px;">13.5</td>
+              <td style="border:1px solid #1976d2; padding:8px;">2.1</td>
+              <td style="border:1px solid #1976d2; padding:8px;">28.4</td>
+              <td style="border:1px solid #1976d2; padding:8px;">3.9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Gráfica histórica de la estación MinAmbiente -->
+      <h3 style="text-align:center; margin-top:36px; color:#1976d2;">Histórico de PM10 - Estación MinAmbiente</h3>
+      <canvas id="historicoChart" width="600" height="300" style="display:block; margin:0 auto 40px auto; background:#fff; border-radius:8px; border:1px solid #1976d2;"></canvas>
+
+    </section>
+  </section>
+
+  <!-- Sección Otras Problemáticas -->
+  <section id="seccion-otras" style="display:none;">
+    <section style="max-width:800px;margin:40px auto;padding:40px 20px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+      <h2 style="color:#1976d2;">Otras problemáticas del barrio La Macarena</h2>
+      <img src="https://www.elnuevoherald.com/public/noticias/america-latina/colombia-es/da3dww/picture133735989/alternates/FREE_1140/Colombia%20Bomb%20one%20mhd%20ppp.JPG" alt="Referencia problemática urbana" style="width:100%;max-width:600px;display:block;margin:24px auto 32px auto;border-radius:10px;border:2px solid #1976d2;">
+      
+      <div style="margin-bottom:28px;">
+        <h3 style="color:#1976d2;margin-bottom:8px;">Protesta contra los piques ilegales</h3>
+        <p>
+          Residentes de La Macarena en Bogotá protestaron contra los piques ilegales y el ruido excesivo generado por motocicletas y vehículos, que han causado accidentes y afectado la tranquilidad del sector.
+        </p>
+        <a href="https://www.infobae.com/colombia/2025/01/19/residentes-de-la-macarena-en-bogota-protestaron-contra-los-piques-ilegales-no-mas-ruido/#:~:text=Accidentes%20de%20tr%C3%A1nsito%2C%20con%20motocicletas,%2C%20con%20453%20(5%25)." target="_blank" style="color:#1976d2;text-decoration:underline;">
+          Leer noticia completa en Infobae
+        </a>
+      </div>
+
+      <div style="margin-bottom:28px;">
+        <h3 style="color:#1976d2;margin-bottom:8px;">Nueva modalidad de robo: rompe vidrios</h3>
+        <p>
+          Se reporta una nueva modalidad de robo en Bogotá, donde delincuentes rompen los vidrios de los vehículos para hurtar pertenencias en su interior, generando preocupación entre los residentes.
+        </p>
+        <a href="https://www.elespectador.com/bogota/una-nueva-modalidad-de-robo-en-bogota-rompe-vidrios/" target="_blank" style="color:#1976d2;text-decoration:underline;">
+          Leer noticia completa en El Espectador
+        </a>
+      </div>
+
+      <div>
+        <h3 style="color:#1976d2;margin-bottom:8px;">Problemas de basura en las localidades</h3>
+        <p>
+          Varias localidades de Bogotá, incluida Santa Fe, enfrentan problemas graves de acumulación de basura. Los habitantes solicitan soluciones urgentes a las autoridades para mejorar la limpieza y el manejo de residuos.
+        </p>
+        <a href="https://www.infobae.com/colombia/2025/04/01/estas-son-las-localidades-de-bogota-invadidas-de-basura-solicitan-el-retiro-inmediato-de-la-directora-de-la-uaesp/" target="_blank" style="color:#1976d2;text-decoration:underline;">
+          Leer noticia completa en Infobae
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Empresa Ámbar. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Estilos para los botones -->
+  <style>
+    .dropdown-btn {
+      background: #1976d2;
+      color: #fff;
+      padding: 12px 28px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 0 8px 24px 8px;
+      transition: background 0.2s;
+    }
+    .dropdown-btn:hover, .dropdown-btn.active {
+      background: #0d47a1;
+    }
+    .dropdown-btn.active-naranja {
+      background: #ff9800 !important;
+      color: #fff !important;
+    }
+  </style>
+
+  <!-- Scripts para mostrar/ocultar secciones -->
+  <script>
+    function mostrarSeccion(seccion) {
+      document.getElementById('seccion-ambiental').style.display = (seccion === 'ambiental') ? 'block' : 'none';
+      document.getElementById('seccion-otras').style.display = (seccion === 'otras') ? 'block' : 'none';
+      // Botón activo
+      var btns = document.querySelectorAll('.dropdown-btn');
+      btns.forEach(btn => btn.classList.remove('active', 'active-naranja'));
+      if(seccion === 'ambiental') btns[0].classList.add('active-naranja');
+      if(seccion === 'otras') btns[1].classList.add('active-naranja');
+    }
+  </script>
+
+  <!-- Leaflet CSS y JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Chart.js para la gráfica -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Inicializa el mapa centrado en Bogotá
+    var map = L.map('map').setView([4.60971, -74.08175], 12);
+
+    // Capa base
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Carga el GeoJSON de estaciones y muestra solo MinAmbiente en naranja
+    fetch('estacionesbog.geojson')
+      .then(response => response.json())
+      .then(data => {
+        let minAmbienteFeature = null;
+        L.geoJSON(data, {
+          pointToLayer: function(feature, latlng) {
+            // Si es la estación MinAmbiente, color naranja; si no, azul
+            if (feature.properties && feature.properties.nombre === "MinAmbiente") {
+              minAmbienteFeature = feature;
+              return L.circleMarker(latlng, {
+                radius: 10,
+                fillColor: "#ff9800", // naranja
+                color: "#e65100",     // borde naranja oscuro
+                weight: 3,
+                opacity: 1,
+                fillOpacity: 0.95
+              });
+            } else {
+              return L.circleMarker(latlng, {
+                radius: 8,
+                fillColor: "#1976d2", // azul
+                color: "#0d47a1",     // borde azul oscuro
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.85
+              });
+            }
+          },
+          onEachFeature: function(feature, layer) {
+            let popup = '';
+            for (const key in feature.properties) {
+              popup += `<strong>${key}:</strong> ${feature.properties[key]}<br>`;
+            }
+            layer.bindPopup(popup);
+          }
+        }).addTo(map);
+
+        // Si hay datos históricos en el GeoJSON, grafícalos
+        if (minAmbienteFeature && minAmbienteFeature.properties && minAmbienteFeature.properties.pm10_historico) {
+          const fechas = minAmbienteFeature.properties.pm10_historico.map(d => d.fecha);
+          const valores = minAmbienteFeature.properties.pm10_historico.map(d => d.valor);
+          crearGraficaHistorica(fechas, valores);
+        } else {
+          // Si no hay datos, muestra un ejemplo
+          crearGraficaHistorica(
+            ["2024-01-01","2024-02-01","2024-03-01","2024-04-01","2024-05-01"],
+            [30, 35, 28, 40, 32]
+          );
+        }
+      });
+
+    // Función para crear la gráfica histórica
+    function crearGraficaHistorica(labels, data) {
+      const ctx = document.getElementById('historicoChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'PM10 (µg/m³)',
+            data: data,
+            borderColor: '#ff9800',
+            backgroundColor: 'rgba(255,152,0,0.15)',
+            pointBackgroundColor: '#ff9800',
+            pointBorderColor: '#e65100',
+            tension: 0.2,
+            fill: true
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: true }
+          },
+          scales: {
+            x: { title: { display: true, text: 'Fecha' } },
+            y: { title: { display: true, text: 'PM10 (µg/m³)' } }
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>

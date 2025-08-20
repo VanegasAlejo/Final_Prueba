@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 80vh;
+    width: 90vw;
+    margin: 30px auto 0 auto;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+    border: 4px solid #FFEFD4;
+    display: block;
+    max-width: 1200px;
+}
+.parque-label {
+    background: rgba(57, 59, 225, 0.85);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 1em;
+    border: 1px solid #2455e5;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+header {
+    background-color: #FFEFD4;
+    color: #000;
+    padding: 36px 0 24px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    position: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 8px rgba(0,0,0,0.10);
+}
+.logo {
+    position: absolute;
+    top: 5px;         /* Más arriba */
+    left: 30px;
+    width: 130px;     /* Un poco más grande */
+    height: auto;
+    z-index: 100;     /* Más alto para que esté sobre el mapa */
+}
